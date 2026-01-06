@@ -1,0 +1,42 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Assertions ON",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "gloo",
+            "shortenCommandLine": "jarmanifest",
+            "vmArgs": "-ea"
+        },
+        {
+            "type": "java",
+            "name": "Assertions OFF",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "gloo",
+            "shortenCommandLine": "jarmanifest",
+            "vmArgs": ""
+        },
+        {
+            "type": "java",
+            "name": "Run JAR (assert ON)",
+            "request": "launch",
+            "mainClass": "Main",
+            "preLaunchTask": "java (buildArtifact): gloo sniffing",
+            "shortenCommandLine": "jarmanifest",
+            "vmArgs": "-ea",
+            "args": "-jar \"out/gloo sniffing.jar\""
+        },
+        {
+            "type": "java",
+            "name": "Run JAR (assert OFF)",
+            "request": "launch",
+            "mainClass": "Main",
+            "preLaunchTask": "java (buildArtifact): gloo sniffing",
+            "shortenCommandLine": "jarmanifest",
+            "vmArgs": "",
+            "args": "-jar \"out/gloo sniffing.jar\""
+        },
+    ]
+}

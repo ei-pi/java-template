@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="gloo:jar">
+    <output-path>$PROJECT_DIR$/</output-path>
+    <root id="archive" name="gloo.jar">
+      <element id="artifact" artifact-name="GLOO" />
+    </root>
+  </artifact>
+</component>
